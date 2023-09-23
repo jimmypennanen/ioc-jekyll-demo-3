@@ -1,0 +1,27 @@
+---
+layout: default
+title: about page
+player:
+ - name: kaapo kakko
+   position: right wing
+   points: 40
+ - name: filip chytil
+   position: center
+   points: 42
+ - name: alexis lafraniere
+   position: left wing
+   points: 38
+---
+
+<section class="padded">
+    <h1> The Kid Line!! </h1>
+    {% for item in page.player %}
+    <div class="card-1">
+        <h2>name: <em>{{item.name}}</em> </h2>
+        <p>position: <strong>{{item.position}}</strong> </p>
+        <p>points last season: <strong>{{item.points}}</strong> </p>
+    </div>
+    {% endfor %}
+
+</section>
+

@@ -1,5 +1,112 @@
 * {
     padding: 0;
-    margin: 0;
+    margin:0;
     box-sizing: border-box;
-}
+  }
+  
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  
+  /* Utility Classes */
+  
+  .padded   { padding: 5%;}
+  .padded-1 { padding: 1rem;}
+  
+  .bg-featured { background-color: #341f97; }
+  .bg-light {background-color: white; }
+  
+  .light-text { color: white; } 
+  
+  
+  .bg-image {
+    background-color: lightblue;
+    background-image: url('https://source.unsplash.com/EPr4Lbco5Qc');
+    background-size: cover;
+    background-position:center;
+    padding: 0.5rem;
+    padding-bottom: 50%;
+    color: white;
+  }
+  
+  /* Universal Styles */
+
+  h1 { margin-bottom: 2.5rem;}
+
+  h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    margin-bottom: 0.8rem;
+  }
+  
+  h2 {
+    font-size: 1.7rem;
+  }
+  
+  p {
+    line-height: 1.2;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  a {
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  
+  .subtle {
+    opacity: 0.8;
+  }
+
+   /* header and footer Styles  */
+
+   header,
+   footer {
+       padding: 5%;
+       background-color: lightblue;
+   }
+
+  
+  
+  /* Card Styles  */
+  
+  .bg-image span {
+    text-transform: uppercase; 
+    font-weight: 600;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 0;
+    border: 2px solid green;
+  }
+
+  .card-1 {
+    padding: 5%;
+    border: 2px solid green;
+    border-radius: 1rem;
+    max-width: 33%;
+    display: inline-block;
+    margin:auto;
+  }
+  
+  .post-info {
+    padding: 1rem;
+  }
+  
+  .date {
+    font-size: 0.8rem;
+    color: rgb(90,90,90);
+  }
+  
+  .card a {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  
+  @media(max-width: 36em) {
+    .latest-news {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+    }
+  }

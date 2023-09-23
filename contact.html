@@ -1,0 +1,41 @@
+---
+layout: default
+title: contact page
+news:
+ - title: Big sale
+   description: Exiting things are happening
+   date: 13th Jan
+   category: Promo
+   url: https://www.sale.com
+ - title: season is upon us 
+   description: it's showdown
+   date: 14th Jan
+   category: nhl
+   url: https://www.sale.com
+ - title: stanley cup
+   description: there is only one winner
+   date: 15th Jan
+   category: glory
+   url: https://www.sale.com
+---
+
+<section class="grid-spaceBetween padded bg-featured latest-news">
+    {% for item in page.news %}
+
+      <!-- First Card   -->
+      <div class="col-4_xs-8">
+        <div class="card">
+          <div class="bg-image">
+            <span> {{item.category}} </span>  
+          </div> 
+          <div class="post-info"> 
+            <p class="date"> {{item.date}} </p> 
+            <h3> {{item.title}} </h3> 
+            <p> {{item.description}} </p> 
+            <a href="{{item.url}}"> Find out more &nbsp; &#10141;</a>
+          </div>
+        </div>
+      </div> 
+
+      {% endfor %}
+  </section> 
